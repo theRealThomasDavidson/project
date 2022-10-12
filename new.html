@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Read File</title>
+</head>
+<body>
+    <form>
+    <label><input type="file" name="myFile" id="inputFile"></label>
+    </form>
+    <pre id="output"></pre>
+    <script>
+        document.getElementById("inputFile").addEventListener('change',function (){
+            var fr = new FileReader();
+            fr.onload=function() {
+                document.getElementById('output').textContent = fr.result;
+                console.log(fr.result)
+            }
+            console.log("this runs")
+            json = JSON.parse(fr.readAsText(this.files[0]))
+            console.log(json)
+        })
+    </script>
+</body>
+</html>
