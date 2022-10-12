@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Question 1</title>
+        <script src="./Q1.js"></script>
     </head>
     <body>
         <form>
@@ -10,7 +11,7 @@
             <input type="number" id = "firstNum" name = "firstNum">
         </form>
         </br></br>
-        <select id = "operator">
+        <select id = "operator1">
             <option value = "add">+</option>
             <option value = "subtract">-</option>
             <option value = "multiply">*</option>
@@ -23,7 +24,7 @@
             <input type="number" id = "secondNum" name = "secondNum">
         </form>
         </br></br>
-        <select id = "operator">
+        <select id = "operator2">
             <option value = "add">+</option>
             <option value = "subtract">-</option>
             <option value = "multiply">*</option>
@@ -36,7 +37,9 @@
             <input type="number" id = "thirdNum" name = "thirdNum">
         </form>
 
-        <button type="button">Calculate</button>
+        <button type = "button" onclick="input()">Calculate</button>
     </body>
+
+    <p id="answer"></p>
 </html>
 
