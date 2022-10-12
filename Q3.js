@@ -55,4 +55,5 @@ function drawTriangle() {
       const ctx = canvas.getContext('2d');
       ctx.clearRect(0,0,canvas.clientWidth, canvas.clientHeight)
     }
+    document.getElementById("returnarea").innerHTML = "you ressed clear";
   }
