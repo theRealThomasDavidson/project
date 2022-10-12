@@ -6,17 +6,20 @@
         <link rel="stylesheet" href="Q3.css">
     </head>
     <body>
-        <div id="homeLink"><a class="homeLink" href="./index.html">Home</a></div>
-        <p class="buttonLine">
-            <button class="draw clear" type="button" onclick="clearBox()">clear</button>
-        </p>
+      
+        
         <p class="buttonLine">
             <button class="draw tri" type="button" onclick="drawTriangle()">Triangle</button>
-            <button class="draw quad" type="button" onclick="drawQuadralateral()">Quadralateral</button>
+            <button class="draw quad" type="button" onclick="drawQuadrilateral()">Quadrilateral</button>
             <button class="draw pent" type="button" onclick="drawPentagon()">Pentagon</button>
         </p>
         <canvas id="canvas" width="360" height="115" ></canvas>
-        <p><a class="Qlink" href="./index.html">Back</a></p>
+        <div id="container">
+        
+            <button class="draw clear" type="button" onclick="clearBox()">Clear</button>
+        
+        <button><a class="Qlink" href="./index.html">Back</a></button>
+        </div>
     </body>
 
 </html>
