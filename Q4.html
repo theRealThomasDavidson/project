@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Person Information</title>
-
-</head>
+    <head>
+        <title>Question 3</title>
+        <script src="./Q4.js"></script>
+        <link rel="stylesheet" href="Q4.css">
+    </head>
 <body>
-    
-<form>
-    ID:<br>
-    <input type="text" name="id"><br><br>
-    First Name:<br>
-    <input type="text" name="firstname"><br><br>
-    Last Name:<br>
-    <input type="text" name="lastname"><br><br>
-    Phone #:<br>
-    <input type="text" name="phonenumber"><br><br>
-    <input type="submit" value="Submit">
+    <form>
+        ID:
+        <br>
+        <input id="id" type="text" name="id">
+        <br><br>
+        First Name:
+        <br>
+        <input id="first_name" type="text" name="first_name">
+        <br><br>
+        Last Name:
+        <br>
+        <input id="last_name"type="text" name="last_name">
+        <br><br>
+        Phone #:
+        <br>
+        <input id="phone_number" type="text" name="phone_number">
+        <br><br>
+        <input type="button" value="Submit" onclick="process()">
     </form>
-    
-    
+    <p id="first_line"></p>
+    <p id="second_line"></p>
 </body>
 </html> 
